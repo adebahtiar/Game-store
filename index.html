@@ -1,0 +1,339 @@
+<html>
+<head>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+
+
+    font-family: Arial;
+    padding: 10px;
+    background: linear-gradient(to top, #ccbcff 0%, #990000 170%);
+  }
+
+  /* Header/Blog Title */
+  .header {
+    padding: 100px;
+    text-align: center;
+    background-image: url(banner.jpeg);
+  }
+
+  .header h1 {
+    font-size: 50px;
+  }
+
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  /* Style the topnav link */
+  .topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  } 
+
+  /* Create two u unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolum {
+    float: left;
+    width: 75%;
+  }  
+
+  /* Right column */
+  .rightcolum {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: px;
+    margin-bottom: ;
+    
+  }
+
+  .card2 {
+    background-color: white;
+    padding: 20px;
+    margin-top: px;
+    text-align: center;
+  }
+
+  /* clear float after the columns */
+  .row::after {
+    content:  "";
+    display: table;
+    clear: both;
+  }
+
+  /* Footer */
+  .foter {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the twocolumns stack on top of each other instead of next to each  other */
+  @media screen and (max-width: 800px) {
+    .leftcolum, .rightcolum {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100px;
+    }
+  }
+
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1></h1>
+<p></p>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">Top Up</a>
+  <a href="#">Login</a>
+  <a href="#" style="float: right">Close</a>
+</div> 
+
+<div class="row">
+  <div class="leftcolum">
+    <div class="card">
+      <h2>TENTANG STORE</h2>
+      <h5>Website top-up terbesar, tercepat dan terpercaya di Indonesia</h5>
+      <img src="adr.jpg"height="400"width="100%" style="border-radius: 25px;">
+      <p></p>
+      <p>Situs resmi top up games dan voucher harga termurah, tercepat, dan terpercaya. Beli Diamond Mobile Legends ML, Free Fire FF DM, Ragnarok X / Global Origin, HDI MD, Genshin Impact Blessing/Crystals, Call of Duty CODM, PUBG UC, Garena Shells, Steam dengan diskon dan harga promo paling murah dan banyak bonus!</p>
+    </div>
+    <div class="card">
+      <h2>Diskon Mobile Legends</h2>
+      <h5>30 April 2024</h5>
+      <img src="oura.webp"height="400"width="100%" style="border-radius: 25px;">
+      <p>STARLIGHT</p>
+      <p>Ketika melakukan top up game, kamu bisa mendapatkan pengalaman bermain game yang lebih seru dan maksimal. Dengan melakukan top up game, kamu bisa mendapatkan akses fitur, item, atau karakter yang terkunci. Biasanya akses yang terkunci hanya bisa dibuka apabila kamu memiliki diamond atau mata uang virtual tertentu.</p>
+    </div>
+    <div class="card">
+        <h2>Top Up Diamond Mobile Legends Diskon 25% Untuk Pengguna Baru!</h2>
+        <h5>30 April 2024</h5>
+        <img src="disc.webp"height="400"width="100%" style="border-radius: 25px;">
+        <p>Hi!</p>
+        <p>Dapatkan diskon 25% untuk top up diamond Mobile Legends di Lapakgaming! Periode promo: 1 – 7 Mei 2024 Kode promo: NEWLGID Syarat dan ketentuan.</p>
+      </div>
+      <div class="card">
+        <h2>Top Up di Lapakgaming pakai DANA Diskon 10rb!</h2>
+        <h5>30 April 2024</h5>
+        <img src="discdn.webp"height="400"width="100%" style="border-radius: 25px;">
+        <p>Hi!</p>
+        <p>Top Up di Lapakgaming pakai DANA Diskon 10rb!</p>
+      </div>
+  </div>
+
+  <div class="rightcolum">
+  <div class="card">
+    <h2>GAME POPULLER</h2>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="ff.png" style="width:100%">
+          <div class="text">FREE FIRE</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="pbg1.jpg" style="width:100%" >
+          <div class="text">PUBG</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="lol.png" style="width:100%">
+          <div class="text">LOL</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="genshin.jpg" style="width:100%">
+            <div class="text">GENSHIN</div>
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <br>
+  </div>
+  </div>
+
+  <div class="card2">
+    <h3>METODE PEMBAYARAN</h3>
+    <img  src="dana.png"height="60px"width="20%" style="border: 2px solid black;   border-radius: 50px;"><br><br>
+    <img src="qris.png"height="60px"width="20%" style="border: 2px solid black;   border-radius: 50px;"><br><br>
+    <img src="shpay.png"height="60px"width="20%" style="border: 2px solid black;   border-radius: 50px;">
+    
+  </div>
+  <div class="card">
+
+</div>
+</div>
+
+<div class="footer">
+<h2></h2>
+
+</div>
+<a href="link_perkumpulan_bengs.html">Kembali</a><br>
+
+</body>
+</html>
